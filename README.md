@@ -128,3 +128,6 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 This can be easily solved with creating a `.env` file and adding the `SKIP_PREFLIGHT_CHECK=true` variable and value.
 
+### Deployed version of this reproduction 
+
+A deployed reproduction is deployed [here](https://eager-mclean-4d67f7.netlify.app/?path=/story/task--default)
