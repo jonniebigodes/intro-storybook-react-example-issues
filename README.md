@@ -62,6 +62,15 @@ One test that worked was the following:
 - Add the styling as is into `src/index.css`
 - Reference it in `.storybook/preview.js`
 
+# Solution
+The following steps solve the issue:
+- Put the compiled css into `public/Taskbox.css`.
+- Leave the font/icons in `public`
+- Create a `preview-head.html` inside `.storybook` directory with the following:
+```html
+<link rel="stylesheet" type="text/css" href="Taskbox.css">
+```
+
 ### Extra documentation
 
 For reference I referred to the create react app docs regarding:
