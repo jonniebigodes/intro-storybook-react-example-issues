@@ -1,15 +1,20 @@
 import React from "react";
 
-import TaskList from "./TaskList";
+//import TaskList from "./TaskList";
+import { PureTaskList } from "./TaskList"; // updates for the data section
 import * as TaskStories from "./Task.stories";
 
+/* eslint-disable */
 export default {
-  component: TaskList,
+  //component: TaskList,
+  component: PureTaskList, // updates for the data section
   title: "TaskList",
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
 };
+/* eslint-enable */
 
-const Template = (args) => <TaskList {...args} />;
+//const Template = (args) => <TaskList {...args} />;
+const Template = (args) => <PureTaskList {...args} />; // updates for the task list
 
 export const Default = Template.bind({});
 Default.args = {
