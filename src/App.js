@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,4 +22,20 @@ function App() {
   );
 }
 
+export default App;
+ */
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './lib/redux';
+
+import InboxScreen from './components/InboxScreen';
+
+import './index.css'; // this can be removed as it's no longer in use.
+function App() {
+  return (
+    <Provider store={store}>
+      <InboxScreen />
+    </Provider>
+  );
+}
 export default App;
