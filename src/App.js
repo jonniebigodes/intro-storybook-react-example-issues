@@ -30,7 +30,7 @@ import store from './lib/redux';
 
 import InboxScreen from './components/InboxScreen';
 
-import './index.css'; // this can be removed as it's no longer in use.
+// import './index.css'; // this can be removed as it's no longer in use.
 function App() {
   return (
     <Provider store={store}>

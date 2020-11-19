@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll",
-    "serve-prod-storybook": "http-server ./storybook-static"
+    "serve-prod-storybook": "http-server ./storybook-static",
+    "serve-prod-app":"http-server ./build"
   },
   "eslintConfig": {
     "extends": [
