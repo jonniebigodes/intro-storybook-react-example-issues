@@ -71,6 +71,11 @@ The following steps solve the issue:
 <link rel="stylesheet" type="text/css" href="Taskbox.css">
 ```
 
+Worth mentioning that for tutorial purposes the `public/index.html` needs to be adjusted to include the CSS for the Screen section to avoid confusion. The following needs to be added:
+```html
+<link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Taskbox.css">
+```
+
 ### Extra documentation
 
 For reference I referred to the create react app docs regarding:
@@ -78,8 +83,6 @@ For reference I referred to the create react app docs regarding:
 - [Adding images, fonts and files](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
 
 It's a bit slim on the documentation side. And doesn't address this case.
-
-
 
 ## Issue with babel-loader
 
